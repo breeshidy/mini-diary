@@ -1,0 +1,57 @@
+h2 {
+  color: #1b051b;
+  font-weight: 600;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-size: calc(20px + 2vmin);
+}
+
+input[id = "searchbar"],
+input[id = "date"] {
+  width: 20%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border-radius: 4px;
+}
+
+input[id="searchbar"] {
+  background-image: url("./images/search-icon.svg");
+  background-size: 20px 20px;
+  background-position: 10px 10px;
+}
+
+input[id="date"] {
+  background-image: url("./images/calendar-icon.svg");
+  background-size: 20px 20px;
+  background-position: 10px 10px;
+}
+
+#diary_entries {
+ margin-top: 20px;
+  text-align: center;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+}
+
+#diary_entries td, #diary_entries th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#diary_entries tr:nth-child(even){background-color: #f2f2f2;}
+
+#diary_entries tr:hover {background-color: #ddd;}
+
+#diary_entries th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #5c0747;
+  color: white;
+}
